@@ -1,0 +1,180 @@
+/* Container chính */
+.auth-container {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Hình ảnh bên trái */
+.auth-image {
+    flex: 1;
+    background: url("../images/logo.jpg") no-repeat center center/cover;
+    display: none;
+}
+@media (min-width: 768px) {
+    .auth-image {
+        display: block;
+    }
+}
+
+/* Form bên phải */
+.auth-form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+
+/* Box form */
+.form-box {
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Tiêu đề */
+.title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.subtitle {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input */
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+}
+.form-group input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 5px rgba(79, 70, 229, 0.5);
+}
+
+/* Options (chỉ dùng cho login) */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.form-options a {
+    color: #4f46e5;
+    text-decoration: none;
+}
+.form-options a:hover {
+    text-decoration: underline;
+}
+
+/* Button */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-submit:hover {
+    background: #333;
+}
+
+/* Link chuyển trang (login <-> register) */
+.auth-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.auth-link a {
+    color: #4f46e5;
+    text-decoration: none;
+}
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+    margin-top: 20px;
+}
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold; /* thêm dòng này */
+}
+/* Thông báo chung */
+.alert {
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    position: relative;
+}
+
+/* Thông báo thành công */
+.alert-success {
+    background-color: #e6ffed;
+    border: 1px solid #28a745;
+    color: #155724;
+}
+
+/* Thông báo lỗi */
+.alert-danger {
+    background-color: #ffeaea;
+    border: 1px solid #dc3545;
+    color: #721c24;
+}
+
+/* Nút đóng (x) */
+.alert .close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: inherit;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.alert .close:hover {
+    color: #000;
+}
+
+/* Tiêu đề trong thông báo */
+.alert h4 {
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    font-weight: bold;
+}
